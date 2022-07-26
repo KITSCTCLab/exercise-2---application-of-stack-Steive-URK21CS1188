@@ -14,7 +14,7 @@ class Evaluate:
     """
     self.top = -1
     self.size = size
-    self.lst = []
+    self.lst = [None]*size
 
   def isEmpty(self):
     """
