@@ -75,7 +75,7 @@ class Evaluate:
         c1+=1
       else:
         c2+=1
-    if c1>c2:
+    if c1>c2 and expression[0].isdigit() and expression[1].isdigit():
       return 1
     else:
       return 0
@@ -96,7 +96,7 @@ class Evaluate:
         v1 = self.pop()
         v2 = self.pop()
         self.push(str(eval(v2 + i + v1)))
-    return int(self.pop())
+    return self.pop()
 
 # Do not change the following code
 postfix_expression = input()  # Read postfix expression
