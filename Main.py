@@ -68,6 +68,8 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
+    c1=0
+    c2=0
     for i in expression:
       if i.isdigit():
         c1+=1
