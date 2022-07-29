@@ -95,7 +95,10 @@ class Evaluate:
       else:
         v1 = self.pop()
         v2 = self.pop()
-        self.push(str(eval(v2 + i + v1)))
+        if i=='/':
+          self.push(str(eval(v2 + i*2 + v1)))
+        else:
+          self.push(str(eval(v2 + i + v1)))
     return self.pop()
 
 # Do not change the following code
