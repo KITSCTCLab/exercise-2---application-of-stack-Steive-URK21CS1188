@@ -96,13 +96,14 @@ class Evaluate:
         v1 = self.pop()
         v2 = self.pop()
         self.push(str(eval(v2 + i + v1)))
-    return self.pop()
+     v3=int(self.pop())
+     return v3
 
 # Do not change the following code
 postfix_expression = input()  # Read postfix expression
 tokens = postfix_expression.split()
 evaluate = Evaluate(len(tokens))
 if evaluate.validate_postfix_expression(tokens):
-    print(int(evaluate.evaluate_postfix_expression(tokens)))
+    print(evaluate.evaluate_postfix_expression(tokens))
 else:
     print('Invalid postfix expression')
