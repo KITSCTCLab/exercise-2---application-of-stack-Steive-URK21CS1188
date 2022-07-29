@@ -96,8 +96,8 @@ class Evaluate:
         v1 = self.pop()
         v2 = self.pop()
         self.push(str(eval(v2 + i + v1)))
-     v3=int(self.pop())
-     return v3
+        v3=int(self.pop())
+    return v3
 
 # Do not change the following code
 postfix_expression = input()  # Read postfix expression
